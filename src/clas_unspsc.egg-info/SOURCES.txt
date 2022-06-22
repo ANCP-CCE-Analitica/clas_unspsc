@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/clas_unspsc.egg-info/PKG-INFO
+src/clas_unspsc.egg-info/SOURCES.txt
+src/clas_unspsc.egg-info/dependency_links.txt
+src/clas_unspsc.egg-info/requires.txt
+src/clas_unspsc.egg-info/top_level.txt
