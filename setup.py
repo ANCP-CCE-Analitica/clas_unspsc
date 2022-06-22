@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='clasunspsc',
-    version='0.3.3.2',
+    version='0.3.6',
     license='MIT',
     author="Isaac Zainea",
     author_email='cizaineam@gmail.com',

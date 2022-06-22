@@ -11,11 +11,6 @@ import ipywidgets as widgets
 from IPython.core.display import HTML
 from nltk.stem import SnowballStemmer
 spanish_stemmer = SnowballStemmer('spanish')
-
-nlp=spacy.load('es_core_news_lg')
-lemmatizer = nlp.get_pipe("lemmatizer")
-sw=list(nlp.Defaults.stop_words)
-
 DF_Clas=pd.read_csv('https://raw.githubusercontent.com/ANCP-CCE-Analitica/clas_unspsc/main/data/Clas_UNSPSC_lemma.csv')
 vectorizer = TfidfVectorizer() 
 
@@ -80,7 +75,7 @@ def recomendador_int():
     estilo=Layout(width='80%', height='100px')
     box_text=widgets.Textarea(
         value='',
-        placeholder='Se busca ...',
+        placeholder='Haga una breve descripción de los productos que quiere usar ...',
         description='String:',
         disabled=False,
         layout=estilo
