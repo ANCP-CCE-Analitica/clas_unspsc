@@ -16,7 +16,7 @@ nlp=spacy.load('es_core_news_lg')
 lemmatizer = nlp.get_pipe("lemmatizer")
 sw=list(nlp.Defaults.stop_words)
 
-DF_Clas=pd.read_csv('../../Datos/Datos Intermedios/Clas_UNSPSC_lemma.csv')
+DF_Clas=pd.read_csv('https://raw.githubusercontent.com/ANCP-CCE-Analitica/clas_unspsc/main/data/Clas_UNSPSC_lemma.csv')
 vectorizer = TfidfVectorizer() 
 
 def CodUNSPSC_mascercanos(m, topk, mask=None):
